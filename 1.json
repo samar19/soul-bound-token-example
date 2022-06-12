@@ -1,0 +1,36 @@
+{
+    "image" : "",
+
+    "description" : "an award coferred by a college or university signifying that the recipient has satisfactorily completed a course of study ",
+    "attributed" : [
+
+           {
+            "trait_type" : "GPA",
+            "value" :3,
+            "max_value" : 4
+
+           },
+
+           {
+            "trait_type" : "Major",
+            "value" :"blockchain development course",
+         
+
+           },
+
+           {
+            "trait_type" : "type of dgree",
+            "value" :"course"
+         
+
+           }
+
+
+
+
+
+    ]
+
+
+
+}
