@@ -1,18 +1,16 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan");
-
-
 require('dotenv').config()
 const fs = require('fs');
 const privateKey = fs.readFileSync(".secret").toString().trim() || "";
 const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
-const alchemyId = fs.readFileSync(".alchemyId").toString().trim() || "";
+
 
 //console.log('infuraId:',infuraId)
 //console.log('etherscan key', process.env.ETHERSCAN_API_KEY)
 
 module.exports = {
-  defaultNetwork: "hardhat",
+  defaultNetwork: "mumbai",
   networks: {
     hardhat: {
       chainId: 1337,
@@ -22,11 +20,12 @@ module.exports = {
       // Infura
       // url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
       url: `https://ropsten.infura.io/v3/${infuraId}`,
-      accounts: [privateKey],  
+      accounts: [privateKey],
+  
     },
     mumbai: {
       // Alchemy
-      url: `https://polygon-mumbai.g.alchemy.com/v2/${alchemyId}`,
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${infuraId}`,
       accounts: [privateKey]
     },
    
@@ -52,4 +51,3 @@ module.exports = {
     apiKey:process.env.POLYGONSCAN_API_KEY,
   },
 };
-

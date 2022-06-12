@@ -1,0 +1,51 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/s/dapps-2022/Ms-hack/soul-bound-token-example/contracts/UniversityDgree.sol": {
+      "lastModificationDate": 1655045876859,
+      "contentHash": "acac78c0bc72cc98348dd1369980f027",
+      "sourceName": "contracts/UniversityDgree.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address",
+        "Context",
+        "Counters",
+        "ERC165",
+        "ERC721",
+        "ERC721URIStorage",
+        "IERC165",
+        "IERC721",
+        "IERC721Metadata",
+        "IERC721Receiver",
+        "Strings",
+        "UniversityDegree"
+      ]
+    }
+  }
+}
